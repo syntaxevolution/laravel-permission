@@ -1,20 +1,9 @@
 # Associate users with permissions and roles
 
 
-### Sponsor
-
-<table>
-   <tr>
-      <td><img src="http://spatie.github.io/laravel-permission/sponsor-logo.png"></td>
-      <td>If you want to quickly add authentication and authorization to Laravel projects, feel free to check Auth0's Laravel SDK and free plan at <a href="https://auth0.com/overview?utm_source=GHsponsor&utm_medium=GHsponsor&utm_campaign=laravel-permission&utm_content=auth">https://auth0.com/overview</a>.</td>
-   </tr>
-</table>
-
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-permission)
-![](https://github.com/spatie/laravel-permission/workflows/Run%20Tests/badge.svg?branch=master)
-[![StyleCI](https://styleci.io/repos/42480275/shield)](https://styleci.io/repos/42480275)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-permission)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/syntaxevolution/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/syntaxevolution/laravel-permission)
+![](https://github.com/syntaxevolution/laravel-permission/workflows/Run%20Tests/badge.svg?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/syntaxevolution/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/syntaxevolution/laravel-permission)
 
 This package allows you to manage user permissions and roles in a database.
 
@@ -36,16 +25,9 @@ Because all permissions will be registered on [Laravel's gate](https://laravel.c
 $user->can('edit articles');
 ```
 
-## Support us
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us). 
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Documentation, Installation, and Usage Instructions
 
 See the [DOCUMENTATION](https://docs.spatie.be/laravel-permission/v3/introduction/) for detailed installation and usage instructions.
-
 
 ### Testing
 
@@ -63,15 +45,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security-related issues, please email [freek@spatie.be](mailto:freek@spatie.be) instead of using the issue tracker.
-
-## Postcardware
-
-You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
-
-We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
+If you discover any security-related issues, please email me instead of using the issue tracker.
 
 ## Credits
 
