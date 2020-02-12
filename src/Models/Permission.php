@@ -23,6 +23,9 @@ class Permission extends Model implements PermissionContract
     use RefreshesPermissionCache;
     use Rememberable;
 
+    public $rememberCacheTag = 'permission_queries';
+    public $rememberFor = 60 * 60; // 1 hour
+
     protected $guarded = ['id'];
 
     protected static function boot() {

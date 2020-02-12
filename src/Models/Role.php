@@ -22,6 +22,9 @@ class Role extends Model implements RoleContract
     use HasPermissions;
     use RefreshesPermissionCache;
 
+    public $rememberCacheTag = 'role_queries';
+    public $rememberFor = 60 * 60; // 1 hour
+
     protected $guarded = ['id'];
 
     protected static function boot() {
