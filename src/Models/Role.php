@@ -13,14 +13,39 @@ use SyntaxEvolution\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Hyn\Tenancy\Traits\UsesTenantConnection;
+use Watson\Rememberable\Rememberable;
 
 class Role extends Model implements RoleContract
 {
     use UsesTenantConnection;
+    use Rememberable;
     use HasPermissions;
     use RefreshesPermissionCache;
 
     protected $guarded = ['id'];
+
+    protected static function boot() {
+        parent::boot();
+
+        self::creating(function($model) {
+            //flush cache
+        });
+
+        self::created(function($model) {
+            //flush cache
+            self::flushCache();
+        });
+
+        self::updated(function($model) {
+            //flush cache
+            self::flushCache();
+        });
+
+        self::deleted(function($model) {
+            //flush cache
+            self::flushCache();
+        });
+    }
 
     public function __construct(array $attributes = [])
     {
