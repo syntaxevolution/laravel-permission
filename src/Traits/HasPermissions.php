@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace SyntaxEvolution\Permission\Traits;
 
-use Spatie\Permission\Guard;
+use SyntaxEvolution\Permission\Guard;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
+use SyntaxEvolution\Permission\PermissionRegistrar;
+use SyntaxEvolution\Permission\Contracts\Permission;
+use SyntaxEvolution\Permission\Exceptions\GuardDoesNotMatch;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use SyntaxEvolution\Permission\Exceptions\PermissionDoesNotExist;
 
 trait HasPermissions
 {

@@ -7,8 +7,8 @@ You may discover that it is best to flush this package's cache before seeding, t
 
 ```php
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
+use SyntaxEvolution\Permission\Models\Role;
+use SyntaxEvolution\Permission\Models\Permission;
 
 class RolesAndPermissionsSeeder extends Seeder
 {

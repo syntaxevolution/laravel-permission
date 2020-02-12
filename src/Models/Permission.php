@@ -1,21 +1,23 @@
 <?php
 
-namespace Spatie\Permission\Models;
+namespace SyntaxEvolution\Permission\Models;
 
-use Spatie\Permission\Guard;
+use SyntaxEvolution\Permission\Guard;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Traits\HasRoles;
+use SyntaxEvolution\Permission\Traits\HasRoles;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Traits\RefreshesPermissionCache;
+use SyntaxEvolution\Permission\PermissionRegistrar;
+use SyntaxEvolution\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use SyntaxEvolution\Permission\Exceptions\PermissionDoesNotExist;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Spatie\Permission\Exceptions\PermissionAlreadyExists;
-use Spatie\Permission\Contracts\Permission as PermissionContract;
+use SyntaxEvolution\Permission\Exceptions\PermissionAlreadyExists;
+use SyntaxEvolution\Permission\Contracts\Permission as PermissionContract;
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 
 class Permission extends Model implements PermissionContract
 {
+    use UsesTenantConnection;
     use HasRoles;
     use RefreshesPermissionCache;
 

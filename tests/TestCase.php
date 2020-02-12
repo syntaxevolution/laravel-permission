@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace SyntaxEvolution\Permission\Test;
 
 use Illuminate\Support\Facades\Cache;
-use Spatie\Permission\Contracts\Role;
+use SyntaxEvolution\Permission\Contracts\Role;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Contracts\Permission;
+use SyntaxEvolution\Permission\PermissionRegistrar;
+use SyntaxEvolution\Permission\Contracts\Permission;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Permission\PermissionServiceProvider;
+use SyntaxEvolution\Permission\PermissionServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

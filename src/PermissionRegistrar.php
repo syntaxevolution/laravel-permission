@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Permission;
+namespace SyntaxEvolution\Permission;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Role;
+use SyntaxEvolution\Permission\Contracts\Role;
 use Illuminate\Contracts\Auth\Access\Gate;
-use Spatie\Permission\Contracts\Permission;
+use SyntaxEvolution\Permission\Contracts\Permission;
 use Illuminate\Contracts\Auth\Access\Authorizable;
 
 class PermissionRegistrar

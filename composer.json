@@ -1,6 +1,6 @@
 {
-    "name": "spatie/laravel-permission",
-    "description": "Permission handling for Laravel 5.8 and up",
+    "name": "syntaxevolution/laravel-permission",
+    "description": "Permission handling for Laravel 5.8 and up with support for tenancy at tenant level",
     "keywords": [
         "spatie",
         "laravel",
@@ -9,16 +9,17 @@
         "roles",
         "acl",
         "rbac",
-        "security"
+        "security",
+        "tenancy"
     ],
-    "homepage": "https://github.com/spatie/laravel-permission",
+    "homepage": "https://github.com/syntaxevolution/laravel-permission",
     "license": "MIT",
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
-            "role": "Developer"
+            "name": "Topher Lazarz",
+            "email": "topher@syntaxevolution.com",
+            "homepage": "https://www.syntaxevolution.com",
+            "role": "Contributor"
         }
     ],
     "require": {
@@ -26,7 +27,8 @@
         "illuminate/auth": "^5.8|^6.0|^7.0",
         "illuminate/container": "^5.8|^6.0|^7.0",
         "illuminate/contracts": "^5.8|^6.0|^7.0",
-        "illuminate/database": "^5.8|^6.0|^7.0"
+        "illuminate/database": "^5.8|^6.0|^7.0",
+        "hyn/multi-tenant": "^5.5"
     },
     "require-dev": {
         "orchestra/testbench": "^3.8|^4.0|^5.0",
@@ -35,7 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Permission\\": "src"
+            "SyntaxEvolution\\Permission\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -43,13 +45,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Permission\\Test\\": "tests"
+            "SyntaxEvolution\\Permission\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Permission\\PermissionServiceProvider"
+                "SyntaxEvolution\\Permission\\PermissionServiceProvider"
             ]
         }
     },

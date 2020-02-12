@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace SyntaxEvolution\Permission\Test;
 
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\PermissionAlreadyExists;
+use SyntaxEvolution\Permission\Contracts\Permission;
+use SyntaxEvolution\Permission\Exceptions\PermissionAlreadyExists;
 
 class PermissionTest extends TestCase
 {

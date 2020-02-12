@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Permission\Test;
+namespace SyntaxEvolution\Permission\Test;
 
 use Illuminate\Support\Facades\DB;
-use Spatie\Permission\Contracts\Role;
+use SyntaxEvolution\Permission\Contracts\Role;
 use Illuminate\Support\Facades\Artisan;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use SyntaxEvolution\Permission\PermissionRegistrar;
+use SyntaxEvolution\Permission\Contracts\Permission;
+use SyntaxEvolution\Permission\Exceptions\PermissionDoesNotExist;
 
 class CacheTest extends TestCase
 {

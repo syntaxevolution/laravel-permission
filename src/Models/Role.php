@@ -1,20 +1,22 @@
 <?php
 
-namespace Spatie\Permission\Models;
+namespace SyntaxEvolution\Permission\Models;
 
-use Spatie\Permission\Guard;
+use SyntaxEvolution\Permission\Guard;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Permission\Traits\HasPermissions;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\RoleAlreadyExists;
-use Spatie\Permission\Contracts\Role as RoleContract;
-use Spatie\Permission\Traits\RefreshesPermissionCache;
+use SyntaxEvolution\Permission\Traits\HasPermissions;
+use SyntaxEvolution\Permission\Exceptions\RoleDoesNotExist;
+use SyntaxEvolution\Permission\Exceptions\GuardDoesNotMatch;
+use SyntaxEvolution\Permission\Exceptions\RoleAlreadyExists;
+use SyntaxEvolution\Permission\Contracts\Role as RoleContract;
+use SyntaxEvolution\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Hyn\Tenancy\Traits\UsesTenantConnection;
 
 class Role extends Model implements RoleContract
 {
+    use UsesTenantConnection;
     use HasPermissions;
     use RefreshesPermissionCache;
 
