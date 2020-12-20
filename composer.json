@@ -28,7 +28,7 @@
         "illuminate/auth": ">=7.0",
         "illuminate/container": ">=7.0",
         "illuminate/contracts": ">=7.0",
-        "illuminate/database": ">=7.0",
+        "illuminate/database": ">=7.0"
     },
     "require-dev": {
         "orchestra/testbench": "^3.8|^4.0|^5.0",
