@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use SyntaxEvolution\Permission\Exceptions\PermissionAlreadyExists;
 use SyntaxEvolution\Permission\Contracts\Permission as PermissionContract;
 use Hyn\Tenancy\Traits\UsesTenantConnection;
-use Watson\Rememberable\Rememberable;
+use SyntaxEvolution\Rememberable\Rememberable;
 
 class Permission extends Model implements PermissionContract
 {
