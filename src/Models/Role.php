@@ -13,7 +13,7 @@ use SyntaxEvolution\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Hyn\Tenancy\Traits\UsesTenantConnection;
-use Watson\Rememberable\Rememberable;
+use SyntaxEvolution\Rememberable\Rememberable;
 
 class Role extends Model implements RoleContract
 {
